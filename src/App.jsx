@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Softskills from './components/Softskills';
 import 'reactjs-popup/dist/index';
+import Copyright from './components/Copyright';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Softskills />
           <Projects />
           <Contact />
+          <Copyright />
         </div>
         <div className='hidden md:block'>
           <ProgressBar />
