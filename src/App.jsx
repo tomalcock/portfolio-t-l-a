@@ -17,7 +17,7 @@ function App() {
       <Header />
       <SideBar />
       <div className='ml-[90px] grid grid-cols-1 md:grid-cols-3'>
-        <div className='col-span-2'>
+        <div className='col-span-2 ml-[-36px]'>
           <Introduction />
           <Skills />
           <Softskills />

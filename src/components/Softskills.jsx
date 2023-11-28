@@ -6,7 +6,7 @@ function Softskills() {
       <div className='flex items-center'>
         <div className='dot w-[20px] h-[7px] bg-red-400 rounded-full'></div>
         <div className='w-full border-[1px] mx-4 mt-[-2px]'></div>
-        <div className='text-[24px] font-bold'>Skills</div>
+        <div className='text-4 font-bold'>Skills</div>
         <div className='w-full border-[1px] mx-4 mt-[-2px]'></div>
         <div className='dot w-[20px] h-[7px] bg-red-400 rounded-full'></div>
       </div>
