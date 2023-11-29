@@ -6,7 +6,7 @@ function Contact() {
       <div className='flex items-center'>
         <div className='dot w-[20px] h-[7px] bg-red-400 rounded-full'></div>
         <div className='w-full border-[1px] mx-4 mt-[-2px]'></div>
-        <div className='text-[24px] font-bold'>Contact</div>
+        <div className='text-4 font-bold'>Contact</div>
         <div className='w-full border-[1px] mx-4 mt-[-2px]'></div>
         <div className='dot w-[20px] h-[7px] bg-red-400 rounded-full'></div>
       </div>
