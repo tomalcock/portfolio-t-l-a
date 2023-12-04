@@ -23,13 +23,13 @@ function Email() {
             id="email-input"
             aria-label="input-field for email address"
             name="email_from"
-            className='my-2 px-1 rounded focus:ring-red-400 focus:outline-none focus:ring-2'
+            className='my-2 px-1 rounded focus:ring-red-400 focus:outline-none focus:ring-2 text-black'
             />
             <label htmlFor="emailMessage">Message</label>
             <textarea 
             name='message'
             id='message'
-            className='message_box h-96 px-1 rounded  focus:ring-red-400 focus:outline-none focus:ring-2'
+            className='message_box h-96 px-1 rounded  focus:ring-red-400 focus:outline-none focus:ring-2 text-black'
             aria-label='input field for email message'
             ></textarea>
             <button 
