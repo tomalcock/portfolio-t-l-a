@@ -1,5 +1,6 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';import 'reactjs-popup/dist/index';
+import { HashLink as Link } from 'react-router-hash-link';
+import 'reactjs-popup/dist/index';
 import Popup from 'reactjs-popup';
 import Email from './Email.jsx'
 

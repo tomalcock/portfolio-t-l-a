@@ -3,6 +3,7 @@ import { FaReact, FaCss3Alt, FaHtml5, FaNode } from 'react-icons/fa'
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 import { SiTailwindcss, SiJest } from "react-icons/si";
 import { DiPostgresql } from "react-icons/di";
+import { Reveal } from '../reveal';
 
 function Tooltip({message, children}) {
     return (
@@ -28,52 +29,54 @@ const techDescriptions = {
 function Skills() {
 
   return (
-    <div id='skills' className='px-12 mt-12'>
-      <div className='flex items-center'>
-        <div className='dot w-[20px] h-[7px] bg-red-400 rounded-full'></div>
-        <div className='w-full border-[1px] mx-4 mt-[-2px]'></div>
-        <div className='text-4 font-bold'>Tech</div>
-        <div className='w-full border-[1px] mx-4 mt-[-2px]'></div>
-        <div className='dot w-[20px] h-[7px] bg-red-400 rounded-full'></div>
+    <Reveal>
+      <div id='skills' className='px-12 mt-12 mb-28'>
+        <div className='flex items-center'>
+          <div className='dot w-[20px] h-[7px] bg-red-400 rounded-full'></div>
+          <div className='w-full border-[1px] mx-4 mt-[-2px]'></div>
+          <div className='text-4 font-bold'>Tech</div>
+          <div className='w-full border-[1px] mx-4 mt-[-2px]'></div>
+          <div className='dot w-[20px] h-[7px] bg-red-400 rounded-full'></div>
+        </div>
+        <div className='flex flex-wrap justify-around mt-10'>
+          <Tooltip message={techDescriptions.React}>
+            <FaReact size={70} />
+          </Tooltip>
+
+          <Tooltip message={techDescriptions.Javascript}>
+            <IoLogoJavascript size={70} />
+          </Tooltip>
+
+          <Tooltip message={techDescriptions.Tailwind}>
+            <SiTailwindcss size={70} />
+          </Tooltip>
+
+          <Tooltip message={techDescriptions.CSS}>
+            <FaCss3Alt size={70} />
+          </Tooltip>
+
+          <Tooltip message={techDescriptions.HTML}>
+            <FaHtml5 size={70} />
+          </Tooltip>
+
+          <Tooltip message={techDescriptions.Node}>
+            <FaNode size={70}/>
+          </Tooltip>
+
+          <Tooltip message={techDescriptions.PostgresQL}>
+            <DiPostgresql size={70}/>
+          </Tooltip>
+
+          <Tooltip message={techDescriptions.Firebase}>
+            <IoLogoFirebase size={70}/>
+          </Tooltip>
+
+          <Tooltip message={techDescriptions.Jest}>
+            <SiJest size={70}/>
+          </Tooltip>
+        </div>
       </div>
-      <div className='flex flex-wrap justify-around mt-10'>
-      <Tooltip message={techDescriptions.React}>
-        <FaReact size={70} />
-      </Tooltip>
-
-      <Tooltip message={techDescriptions.Javascript}>
-        <IoLogoJavascript size={70} />
-      </Tooltip>
-
-      <Tooltip message={techDescriptions.Tailwind}>
-        <SiTailwindcss size={70} />
-      </Tooltip>
-
-      <Tooltip message={techDescriptions.CSS}>
-        <FaCss3Alt size={70} />
-      </Tooltip>
-
-      <Tooltip message={techDescriptions.HTML}>
-        <FaHtml5 size={70} />
-      </Tooltip>
-
-      <Tooltip message={techDescriptions.Node}>
-        <FaNode size={70}/>
-      </Tooltip>
-
-      <Tooltip message={techDescriptions.PostgresQL}>
-        <DiPostgresql size={70}/>
-      </Tooltip>
-
-      <Tooltip message={techDescriptions.Firebase}>
-        <IoLogoFirebase size={70}/>
-      </Tooltip>
-
-      <Tooltip message={techDescriptions.Jest}>
-        <SiJest size={70}/>
-      </Tooltip>
-      </div>
-    </div>
+    </Reveal>
   )
 }
 
