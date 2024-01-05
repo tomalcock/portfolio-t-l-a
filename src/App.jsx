@@ -11,6 +11,7 @@ import Softskills from './components/Softskills';
 import 'reactjs-popup/dist/index';
 import Copyright from './components/Copyright';
 
+
 function App() {
   return (
     <div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Reveal } from '../reveal';
 
 function Projects() {
 
@@ -39,6 +40,7 @@ const projects = [
 ]
   return (
     <div id='projects' className='px-12 mt-12'>
+    <Reveal>
       <div className='flex items-center'>
         <div className='dot w-[20px] h-[7px] bg-red-400 rounded-full'></div>
         <div className='w-full border-[1px] mx-4 mt-[-2px]'></div>
@@ -46,9 +48,11 @@ const projects = [
         <div className='w-full border-[1px] mx-4 mt-[-2px]'></div>
         <div className='dot w-[20px] h-[7px] bg-red-400 rounded-full'></div>
       </div>
+      </Reveal>
       <ul className='flex flex-wrap justify-center'>
         {projects.map((element) => {
           return (
+            <Reveal key={element.title}>
             <li key={element.title} className='flex flex-col justify-center text-center w-64 mx-5 my-4'>
               <p className='my-2 text-lg'>{element.title}</p>
               <Tooltip message='Click to view live!'>
@@ -61,6 +65,7 @@ const projects = [
               <p className='my-2 italic'>{element.tech}</p>
               <a href={element.github}>Github repo</a>
             </li>
+            </Reveal>
           )
         })}
       </ul>
