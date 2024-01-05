@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Softskills from './components/Softskills';
+import TheNumbers from './components/TheNumbers';
 import 'reactjs-popup/dist/index';
 import Copyright from './components/Copyright';
 
@@ -21,6 +22,7 @@ function App() {
         <div className='col-span-2 ml-[-36px]'>
           <Introduction />
           <Skills />
+          <TheNumbers />
           <Softskills />
           <Projects />
           <Contact />
