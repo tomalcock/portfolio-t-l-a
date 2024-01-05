@@ -14,7 +14,7 @@ function Softskills() {
           <div className='w-full border-[1px] mx-4 mt-[-2px]'></div>
           <div className='dot w-[20px] h-[7px] bg-red-400 rounded-full'></div>
         </div>
-        <h2 className='my-5'>Working tirelessly in Education for 7 years to reach management level, and showing determination and resilience in the Northcoders Bootcamp has given me a wide range of invaluable transferable skills that include:</h2>
+        <h2 className='my-5 text-center'>Working tirelessly in Education for 7 years to reach management level, and showing determination and resilience in the Northcoders Bootcamp has given me a wide range of invaluable transferable skills that include:</h2>
         <div className='text-center'>
           <p>Team Work</p>
           <p>Leadership</p>
