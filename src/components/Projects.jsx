@@ -36,8 +36,21 @@ const projects = [
     tech: 'React, Vite, Phaser, Firebase, Tailwind, GIT version control',
     github: 'https://github.com/sting-arrays/pixel-plunge',
     live: 'https://pixel-plunge.netlify.app'
-  } 
+  },
+  
 ]
+
+const incompleteProjects = [
+  {
+    title: 'WORKING PROGRESS: Mathematricks',
+    image: '/mathematricks.png',
+    description: "An educational Maths platform where users can sign up to courses for different topics. Each course will contain resources such as videos, worksheets and quizes.",
+    tech: 'Next, Prisma, MongoDB, Vercel',
+    github: '',
+    live: 'https://pixel-plunge.netlify.app'
+  }
+]
+
   return (
     <div id='projects' className='px-12 mt-12'>
     <Reveal>
@@ -55,6 +68,24 @@ const projects = [
             <Reveal key={element.title}>
             <li key={element.title} className='flex flex-col justify-center text-center w-64 mx-5 my-4'>
               <p className='my-2 text-lg'>{element.title}</p>
+              <Tooltip message='Click to view live!'>
+                <a href={element.live}
+                alt="four columns of code that show 4 important files for the API">
+                  <img className='m-auto cursor-pointer hover:scale-110 transition-all ease-in-out w-32' src={element.image} alt="four columns of code that show 4 important files for the API" />
+                </a>
+              </Tooltip>
+              <p className='my-2 font-bold'>{element.description}</p>
+              <p className='my-2 italic'>{element.tech}</p>
+              <a href={element.github}>Github repo</a>
+            </li>
+            </Reveal>
+          )
+        })}
+        {incompleteProjects.map((element) => {
+          return (
+            <Reveal key={element.title}>
+            <li key={element.title} className='flex flex-col justify-center text-center w-64 mx-5 my-4'>
+              <p className='my-2 text-lg text-red-400'>{element.title}</p>
               <Tooltip message='Click to view live!'>
                 <a href={element.live}
                 alt="four columns of code that show 4 important files for the API">
